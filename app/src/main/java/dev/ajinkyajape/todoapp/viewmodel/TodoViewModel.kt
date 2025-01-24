@@ -43,8 +43,6 @@ class TodoViewModel(private val todoDao: TodoDao) : ViewModel() {
         viewModelScope.launch {
             try {
                 if (!TextUtils.isEmpty(sValue)) {
-                    if (sValue == "Error")
-                        throw IllegalArgumentException("Failed to add TODO")
                     withContext(Dispatchers.IO) {
                         todoDao.insertTodoItem(TodoModel(itemName = sValue))
                     }
