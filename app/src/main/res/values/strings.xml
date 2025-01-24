@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="press_the_button_to_add_a_todo_item">Press the + button to add a TODO item</string>
+    <string name="search_todos">Search Todos</string>
+    <string name="add_todo">Add To do</string>
+    <string name="enter_todo">Enter Todo</string>
+</resources>
